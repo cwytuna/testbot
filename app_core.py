@@ -28,10 +28,10 @@ def callback():
     return 'OK'
 
 # 學你說話
-@handler.add(MessageEvent, message=TextMessage)
-def echo(event):
-   message = event.message.text     
-   line_bot_api.reply_message(event.reply_token,TextSendMessage(message))
+#@handler.add(MessageEvent, message=TextMessage)
+#def echo(event):
+#   message = event.message.text     
+#   line_bot_api.reply_message(event.reply_token,TextSendMessage(message))
 
 if __name__ == "__main__":
     app.run()
